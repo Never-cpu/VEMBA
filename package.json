@@ -1,0 +1,26 @@
+{
+  "name": "vemba-storefront",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "setup:https": "powershell -NoProfile -File scripts/setup-https.ps1",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "catalog:sync": "node scripts/sync-catalog.mjs",
+    "qa": "node scripts/qa.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "^8.3.5"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.codex-build-check-*/
+data/reviews.jsonl
+
+# Local TLS private keys must never be committed or published.
+.local/
